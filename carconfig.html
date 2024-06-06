@@ -1,14 +1,61 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-  <meta charset="UTF-8">
-  <title>Fahrzeug-Konfigurator</title>
+    <meta charset="UTF-8">
+    <title>Fahrzeug-Konfigurator</title>
+    <style>
+        html * {
+            font-family: Roboto;
+            background-color: #F5f5dc;
+        }
+    </style>
 
 </head>
 <body>
 
 <h1>Fahrzeug-Konfigurator</h1>
 
+<form action="https://it.bzz.ch/demo/formdata/index.php" method="post">
+    <fieldset>
+        <label>Fahrzeugmodelle:<br>
+            <select name="Fahrzeugmodellen" size="5" multiple>
+                <option value="Ferrari">Ferrari</option>
+                <option value="Lamborghini">Lamborghini</option>
+                <option value="Bugatti">Bugatti</option>
+                <option value="McLaren">McLaren</option>
+                <option value="Porsche">Porsche</option>
+                <option value="Koenigsegg">Koenigsegg</option>
+                <option value="Pagani">Pagani</option>
+                <option value="Aston Martin">Aston Martin</option>
+                <option value="Maserati">Maserati</option>
+                <option value="Lexus">Lexus</option>
+                <option value="Bentley">Bentley</option>
+                <option value="Rolls-Royce">Rolls-Royce</option>
+                <option value="Tesla">Tesla</option>
+                <option value="Lotus">Lotus</option>
+                <option value="Acura">Acura</option>
+            </select>
+        </label>
+    </fieldset>
+
+  <fieldset>
+    <label>Lackfarbe
+      <input type="radio" id="ro" name="Zahlmethode" value="Rot">
+      <label for="ro"> Rot</label>
+      <input type="radio" id="bl" name="Zahlmethode" value="Blau">
+      <label for="bl"> Blau</label>
+      <input type="radio" id="gr" name="Zahlmethode" value="Grün">
+      <label for="gr"> Grün</label>
+      <input type="radio" id="sc" name="Zahlmethode" value="Schwarz">
+      <label for="sc"> Schwarz</label>
+    </label>
+  </fieldset>
+
+  <fieldset>
+    <button type="submit">submit</button>
+  </fieldset>
+
+</form>
 
 </body>
 </html>
